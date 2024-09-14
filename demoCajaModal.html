@@ -5,8 +5,29 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Modal</title>
+    <script>
+        window.onload= function(){
+            document.getElementById("diag01").show();
+        }
+    </script>
 </head>
 <body>
-    
+    <p>Cosas diversas..</p>
+
+    <dialog style="height: 80vh;" id="diag01">
+        <div style="overflow: auto; height: 60vh;" autofocus>
+          <p>By placing an order via this Web site on the first day of the fourth month of the year
+          2010 Anno Domini, you agree to grant Us a non-transferable option to claim, for now and for
+          ever more, your immortal soul.</p>
+          <p>Should We wish to exercise this option, you agree to surrender your immortal soul,
+          and any claim you may have on it, within 5 (five) working days of receiving written
+          notification from  this site or one of its duly authorized minions.</p>
+          <!-- ... etc., with many more <p> elements ... -->
+        </div>
+        <form method="dialog">
+          <button type="submit" value="agree">Agree</button>
+          <button type="submit" value="disagree">Disagree</button>
+        </form>
+      </dialog>   
 </body>
 </html>
